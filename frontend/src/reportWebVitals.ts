@@ -1,8 +1,13 @@
 import {
-  getCLS, getFCP, getFID, getTTFB, getLCP,
-} from 'web-vitals';
+  getCLS,
+  getFCP,
+  getFID,
+  getTTFB,
+  getLCP,
+  ReportHandler,
+} from "web-vitals";
 
-const reportWebVitals = (onPerfEntry) => {
+const reportWebVitals = (onPerfEntry?: ReportHandler) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     getCLS(onPerfEntry);
     getFID(onPerfEntry);

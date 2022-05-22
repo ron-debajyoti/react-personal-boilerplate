@@ -1,0 +1,15 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  },
+  "extends": [
+    "airbnb-typescript",
+    "prettier",
+    "react-app",
+    "react-app/jest"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  }
+}
